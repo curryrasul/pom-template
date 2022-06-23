@@ -8,6 +8,7 @@
 * Обновленный npm и node.js > 14 версии
 * Установленный Rust toolchain и компилятор Circom:
 ```bash
+npm install -g npm
 curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf | sh
 source $HOME/.cargo/env
 git clone https://github.com/iden3/circom.git
@@ -18,7 +19,7 @@ cargo install --path circom
 ## Использование
 *Для удобства использования, заранее созданы файлы , которые будут нужны для работы* 
 
-* Установка модулей (пробовать запустить только если node/npm выдает ошибки, на диске модули будут подгружены сразу)
+* Установка модулей
 ```bash
 npm install
 ```
