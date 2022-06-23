@@ -3,7 +3,7 @@
 *The code is not for production. It's just an academic proof of concept*
 
 ## Description
-Template for *Proof of set membership* on a Ethereum blockchain with zkSNARKs, using Circom and SnarkJS
+Template for *Proof of Set Membership* on the Ethereum blockchain with zkSNARKs, using Circom and SnarkJS
 
 ## Status
 - [] Circuits
