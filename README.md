@@ -29,3 +29,9 @@ cargo install --path circom
 git clone git@github.com:curryrasul/pom-template.git && cd pom-template
 npm install
 ```
+
+## Tests
+```bash
+chmod a+x tests/script.sh
+tests/script.sh
+```

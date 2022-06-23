@@ -26,8 +26,8 @@ async function run() {
     const jsonedProof = JSON.stringify(proof, null, 1);
     const jsonedPublic = JSON.stringify(publicSignals, null, 1);
 
-    console.log(jsonedProof);
-    console.log(jsonedPublic);
+    // console.log(jsonedProof);
+    // console.log(jsonedPublic);
 
     await fsPromises.writeFile(proofOutputPath, jsonedProof, 'utf8', function (err) {
         if (err) {
