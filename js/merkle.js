@@ -1,3 +1,7 @@
+// Takes F (field), hash (hash function)
+// arr (array of leaves), nLevels (number of Merkle Tree levels).
+// Returns merkle tree (stored as binary heap).
+// Only doing first level of hashing, then other with recursion
 function merkelize(F, hash, arr, nLevels) {
     const extendedLen = 1 << nLevels;
 
@@ -13,6 +17,7 @@ function merkelize(F, hash, arr, nLevels) {
     return __merkelize(hash, hArr);
 }
 
+// Helper function
 function __merkelize(hash, arr) {
     if (arr.length == 1) return arr;
 
@@ -26,6 +31,7 @@ function __merkelize(hash, arr) {
     return [...m, ...arr];
 }
 
+// Get siblings of merkle leaf (Merkle proof)
 function getMerkleProof(m, key, nLevels) {
     if (nLevels == 0) return [];
 
@@ -37,6 +43,7 @@ function getMerkleProof(m, key, nLevels) {
     return [...topSiblings, curSibling];
 }
 
+// Merkle proof verification
 function isMerkleProofValid(F, hash, key, value, root, mp) {
     let h = hash([value]);
     for (let i = mp.length - 1; i >= 0; i--) {

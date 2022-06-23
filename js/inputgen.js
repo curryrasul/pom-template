@@ -1,3 +1,10 @@
+// Program that generates proof and publicSignals and store them into files
+
+// First arg: proof output file path
+// Second arg: public input file path
+// Third arg: witness generator wasm file path
+// Fourth arg: setup file path
+
 const hash = require("circomlibjs").poseidon;
 const { merkelize, getMerkleProof } = require("../js/merkle.js");
 const F = require("circomlibjs").babyjub.F;
@@ -15,6 +22,7 @@ const input = {
     siblings: mp
 };
 
+// CL args as input
 const proofOutputPath = process.argv[2];
 const publicOutputPath = process.argv[3];
 const witnessGenPath = process.argv[4];
