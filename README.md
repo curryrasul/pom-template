@@ -9,7 +9,7 @@ Template for *Proof of Set Membership* on the Ethereum blockchain with zkSNARKs,
 - [x] Circuits
 - [] Smart-contract (Verifier)
 - [] Input and witness generator
-- [] Tests
+- [x] Tests
 - [] Usage instruction
 
 ___
