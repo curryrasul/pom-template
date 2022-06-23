@@ -10,7 +10,7 @@ describe("Check Merkle tree Circuit", function () {
     this.timeout(10000000);
 
     before(async() => {
-        circuit = await wasm_tester(path.join(__dirname, "circuits", "test.circom"));
+        circuit = await wasm_tester(path.join(__dirname, "./", "./test.circom"));
     });
 
     it("Should check inclussion in MT", async () => {

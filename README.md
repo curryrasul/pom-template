@@ -14,8 +14,9 @@ Template for *Proof of Set Membership* on the Ethereum blockchain with zkSNARKs,
 
 ___
 
-## Requirements (Rust + Circom)
+## Requirements (Rust + Circom + npm)
 ```bash
+npm install -g npm
 curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf | sh
 source $HOME/.cargo/env
 git clone https://github.com/iden3/circom.git
@@ -25,6 +26,6 @@ cargo install --path circom
 
 ## Usage
 ```bash
-git clone git@github.com:curryrasul/pom-template.git
+git clone git@github.com:curryrasul/pom-template.git && cd pom-template
 npm install
 ```
