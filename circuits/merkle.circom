@@ -24,7 +24,6 @@ template Mkt2VerifierLevel() {
 }
 
 template Mkt2Verifier(nLevels) {
-
     signal input key;
     signal input value;
     signal input root;
