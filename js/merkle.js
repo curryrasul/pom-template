@@ -26,22 +26,20 @@ function __merkelize(hash, arr) {
     return [...m, ...arr];
 }
 
-
 function getMerkleProof(m, key, nLevels) {
     if (nLevels == 0) return [];
 
     const extendedLen = 1 << nLevels;
 
-    topSiblings = getMerkleProof(m, key >> 1, nLevels -1);
-    curSibling = m[ extendedLen - 1 + (key ^ 1) ];
+    topSiblings = getMerkleProof(m, key >> 1, nLevels - 1);
+    curSibling = m[extendedLen - 1 + (key ^ 1)];
 
     return [...topSiblings, curSibling];
 }
 
-
 function isMerkleProofValid(F, hash, key, value, root, mp) {
     let h = hash([value]);
-    for (let i = mp.length - 1; i >= 0; i --) {
+    for (let i = mp.length - 1; i >= 0; i--) {
         if ((1 << (mp.length - 1 - i)) & key) {
             h = hash([mp[i], h]);
         } else {

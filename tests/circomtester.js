@@ -9,16 +9,16 @@ describe("Check Merkle tree Circuit", function () {
 
     this.timeout(10000000);
 
-    before( async() => {
+    before(async() => {
         circuit = await wasm_tester(path.join(__dirname, "circuits", "test.circom"));
     });
 
     it("Should check inclussion in MT", async () => {
-        const m = merkelize(F, hash, [11,22,33,44,55,66,77,88], 3);
+        const m = merkelize(F, hash, [11, 22, 33, 44, 55, 66, 77, 88], 3);
         const root = m[0];
         const mp = getMerkleProof(m, 2, 3);
 
-        const input={
+        const input = {
             key: F.e(2),
             value: F.e(33),
             root: root,

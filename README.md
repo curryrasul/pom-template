@@ -7,19 +7,24 @@ Template for *Proof of Set Membership* on the Ethereum blockchain with zkSNARKs,
 
 ## Status
 - [x] Circuits
-- [] Smart-contract (Verifier)
-- [] Input and witness generator
+- [x] Smart-contract (Verifier)
+- [x] Input and witness generator
 - [x] Tests
-- [] Usage instruction
+- [x] Usage instruction
 
 ___
 
-## Requirements
+## Requirements (Rust + Circom)
 ```bash
-npm install
+curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf | sh
+source $HOME/.cargo/env
+git clone https://github.com/iden3/circom.git
+cargo build --release
+cargo install --path circom
 ```
 
 ## Usage
 ```bash
 git clone git@github.com:curryrasul/pom-template.git
+npm install
 ```
