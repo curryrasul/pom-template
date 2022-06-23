@@ -1,5 +1,9 @@
 {
-  "dependencies": {
-    "circomlib": "^2.0.5"
+  "devDependencies": {
+    "chai": "^4.3.4",
+    "circom_tester": "^0.0.7",
+    "circomlib": "^2.0.5",
+    "circomlibjs": "^0.0.8",
+    "mocha": "^9.1.3"
   }
 }

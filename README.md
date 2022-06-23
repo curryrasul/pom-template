@@ -16,13 +16,10 @@ ___
 
 ## Requirements
 ```bash
-
-npm i circomlib
+npm install
 ```
 
 ## Usage
 ```bash
 git clone git@github.com:curryrasul/pom-template.git
-
 ```
-
