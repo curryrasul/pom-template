@@ -35,3 +35,7 @@ npm install
 chmod a+x tests/script.sh
 tests/script.sh
 ```
+
+## Smart - contract usage/testing
+In remix ...
+
