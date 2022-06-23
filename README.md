@@ -6,7 +6,7 @@
 Template for *Proof of Set Membership* on the Ethereum blockchain with zkSNARKs, using Circom and SnarkJS
 
 ## Status
-- [] Circuits
+- [x] Circuits
 - [] Smart-contract (Verifier)
 - [] Input and witness generator
 - [] Tests
@@ -14,7 +14,15 @@ Template for *Proof of Set Membership* on the Ethereum blockchain with zkSNARKs,
 
 ___
 
+## Requirements
+```bash
+
+npm i circomlib
+```
+
 ## Usage
 ```bash
 git clone git@github.com:curryrasul/pom-template.git
+
 ```
+
